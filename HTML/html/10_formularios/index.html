@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    input, label{
+        display: block;
+    }
+</style>
+
+<!--
+    form - encierra todos los campos del formulario
+    label - representa el nombre del campo
+    input type=
+        text (default) - Entrada de texto
+        password - campo para contraseñas (no encripta, sólo oculta)
+        number - permite introducir únicamente valores numéricos
+        submit - botón para enviar el formulario
+        button - igual que submit
+        image - enviar el formulario usando una imagen personalizada
+        button - este tipo fue sustituido en HTML5 por la etiqueta button que teneís a continuación
+        <button></button> - igual que submit
+        reset - reinicia el formulario vaciando los campos
+        radio - crea un radio button
+        checkbox - crea un checkbox
+        date - permite seleccionar una fecha de un calendario
+        datetime-local - permite seleccionar fecha y hora (obsoleto por la WHATWG)
+        time -  Pemite introducir una hora sin zona horaria específica
+        month - permite seleccionar un mes de un caledario
+        week - permite seleccionar una semana
+        color - permite seleccionar un color de una paleta de colores
+        email - sirve para introducir un email con validación HTML5 (insegura) - Validar desde JS y el servidor
+        file - permite subir archivos al servidor
+        range - crea un slide para seleccionar un valor numérico
+        search - crea un campo igual que text pero con semántica de búsqueda
+        tel -  crea un campo para introducir teléfono, en movil sale un teclado diferente
+        url- crea un campo para introduccir una url
+    
+    <datalist></datalist> - crea un filtro en el que poder buscar los valores de option
+
+    <input list=id_de_la_lista>
+
+    <select name="" id="">
+        <optgroup label="Lenguajes de marcado">
+            <option value=""></option>
+        </optgroup>
+    </select>
+
+    <textarea name="" id="" cols="30" rows="10"></textarea> 
+
+
+    Attributes
+        boolean
+            required: Hace que un campo sea obligatiorio
+            disabled: desactiva la interacción con un campo
+            checked: Marca un radio | checkbox por defecto
+            selected: Marca un option por defecto
+            autofocus: Pone el foco automático en un campo
+            readonly: Hace que el campo sea solo de lectura
+        Otros
+            maxlenght/minlenght: determina la cantidad máxima o mínima de caracteres en un campo
+            min/max: determina el mínimo y el máximo en los campos numéricos
+            autocomplete=on|off(formulario): Permite al navegador autocompletar con los datos que tiene almacenados
+            placeholder: Establece un valor de inicio y se borra al introducir información
+-->
+
+<body>
+    <form action="" autocomplete="on">
+        <label for="name">Nombre</label> <!--for e id relaciona el label con el formulario-->
+        <input type="tex" id="name" required maxlength="10"/>
+        
+        <label for="age">Edad</label>
+        <input id="age" type="number"/>
+    
+        <label for="password">Contraseña</label>
+        <input type="password" id="password"/>
+
+        <legend>Seleccione el Sexo</legend>
+        <label for="man">Hombre</label>
+        <input type="radio" id="man" name="sex"/>
+        <label for="woman">Mujer</label>
+        <input type="radio" id="woman" name="sex"/>
+
+
+        <legend>Selecciona tus Hobbies</legend>
+        <label for="html">HTML</label>
+        <input type="checkbox" id="html"/>
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css"/>
+        <label for="js">JS</label>
+        <input type="checkbox" id="js"/>
+
+        <input type="date"/>
+        <input type="time"/>
+        
+        
+        <fieldset> <!--agrupa inputs-->
+            <legend>mes y semana</legend>
+            <input type="month"/>
+            <input type="week"/>
+        </fieldset>
+        
+        <input type="color"/>
+
+        <label>ingrese su correo</label>
+        <input type="email"/>
+
+        <label>suba un archivo</label>
+        <input type="file"/>
+
+        <input type="range" min="0" max="50" step="10"/>
+
+        <label for="languages">Seleccione su lenguaje favorito</label>
+        <select id="languages">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js" selected>JavaScript</option>
+        </select>
+        
+        <label for="text">Escribe tu mensaje</label>
+        <textarea id="text" cols="10" rows="5"></textarea>
+
+
+        <input type="submit" value="Enviar"/>
+        <!--<input type="image"/> uma imagen como boton-->
+    
+    </form>
+    
+</body>
+</html>

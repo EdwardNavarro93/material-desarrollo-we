@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto"> <!--idioma de la pagina en ingles dir es a direccion de lectura-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+        li[data-user="user"]{
+            color: red;
+        }
+    
+        li[data-user="admin"]{
+            color: green;
+        }
+            
+    </style>
+
+</head>
+<body>
+    <nav role="navegacion-principal"> 
+        <!-- establece el rol que tendra este elemento en la pagina-->
+        <ul>
+            <li data-user="user">Item1</li> <!--atributos personalizados-->
+            <li data-user="admin">Item2</li>
+            <li data-user="user">Item3</li>
+            <li data-user="user">Item4</li>
+        </ul>
+    </nav>
+    <main role="contenido-principal"> 
+        <p class="parrafo" id="primer-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officia magnam vero repellat, iure quis molestias nulla quas voluptate nostrum necessitatibus, quasi ex asperiores laudantium accusamus soluta recusandae expedita quia.</p>
+
+        <input type="text"/> <!--atriuto de tipo foco-->
+        
+        <!--etiqueta nueva
+        <details>
+            <summary>Titulo del acordeon</summary>
+            <p>contenido del acordeon</p>
+            <p>contenido del acordeon</p>
+            <p>contenido del acordeon</p>
+        </details>
+
+        -->
+    </main>
+    
+</body>
+</html>
