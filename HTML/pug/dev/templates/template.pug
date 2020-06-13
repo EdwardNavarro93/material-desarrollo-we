@@ -1,0 +1,25 @@
+include ../config/config
+
+// funcionara como plantilla
+//es decir aqui se colocara el codigo que sea comun para las diferentes paginas
+
+doctype
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        //introducir una hoja de estilos
+        // link(rel="stylesheet", href="styles.css") 
+    body
+        //uso de bloques dentro de las plantillas
+        header.header 
+            block header
+        main.main
+            block main
+        footer.footer
+            block footer
+
+
+        //introducir una hoja de java escript
+        //script(src="scripts.js")  

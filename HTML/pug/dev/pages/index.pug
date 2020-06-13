@@ -1,0 +1,29 @@
+extends ../templates/template
+include ../mixins/link
+include ../mixins/list  
+
+block header
+    h1 esta es la pagina Principal
+
+
+block main
+    h2 aqui iria el contenido de la pagina principal
+
+    p soy un parrafo principal
+
+    h3 se crea un listado de nombres gracias a un archivo de configuracion
+    
+    ul
+    each name in names
+        li= `hola bienvenido ${name}`
+
+    h3 se crea un link gracias a un mixin
+
+    ul
+        li
+            +link('#', 'soy un enlace creado con mixins')
+
+    h3 se crea una lista gracias a un mixin
+
+    ul
+        +list(names)

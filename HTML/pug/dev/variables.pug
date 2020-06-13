@@ -1,0 +1,21 @@
+//variables JS en Pug
+-const name="dorian"
+p= `hola mi nombre es ${name}`
+
+//ejemplos de Arrays
+        
+-const nombres = ["edward","carlos","claudia"]
+ul
+    li= nombres[0]
+    li= nombres[1]
+    li= nombres[2]
+//con objetos es muy importante poner el guión y después un salto de línea e indentar, si no NO FUNCIONA 
+- 
+    const person = {
+        name: "Dorian",
+        surname: "Desings",
+        age: 30
+        }
+ul
+    li= person.name
+    li= person.surname

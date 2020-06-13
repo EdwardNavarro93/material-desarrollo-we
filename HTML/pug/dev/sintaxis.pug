@@ -1,0 +1,38 @@
+// 
+ pug es basicamente un precompilador para html que permite escribir codigo de manera mas rapida y modular, tambien agrega funcionalidades extra de un lenguaje de programacion que Html no posee propiamente.
+
+// cescritura de una etiqueta en pug:
+h1 hola mundo
+
+//anidacion de elemento: 
+
+ul 
+    li soy un elemento de una lista
+
+//atributos:
+
+a(href="#") soy un enlace con un atributo
+a(href="#", name="enlace") soy  un enlace con mas de un atributo 
+
+//id y clases
+
+p#parrafo soy un parrafo con un id
+p.clase soy un parrafo con una clase
+p#parrafo1.clase1.clase2 soy un parrafo con un id y mas de una clase
+
+//  Para intercalar hijos dentro de elementos se utiliza el operador |
+
+p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eveniet animi? Quo ipsum quisquam, 
+    a(href="#") soy un enlace dentro del texto  
+    | quia earum dolor ipsa nihil sunt. 
+
+// Si no se desea hacer muchos saltos en elementos que ocupan poco tenemos la opción de utilizar : 
+
+// : equivalen a una identacion
+
+nav
+    ul.menu
+        li.menu__item
+            a.menu__link item 1 del menu
+
+nav: ul.menu1: li.menu1_item: a.menu1__link item 1 del menu1
