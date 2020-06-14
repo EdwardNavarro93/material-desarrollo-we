@@ -1,0 +1,103 @@
+body{
+    padding-bottom: 50em;
+    text-align: center;
+}
+
+[class^="bg-"]{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+    height: 150px;
+    border: 1px solid red;
+}
+
+.bg-color{ 
+    background-color: purple; /* aplica color de fondo*/
+}
+
+.bg-image{
+    background-image: url(imagenes/abeja1.png); /* aplica una imagen de fondo con su tamaño original*/
+}
+
+/*bacground size
+    x % y%|auto|cover|contain.
+    el valor en y es opcional, si no se coloca se calcula automaticamente.
+    cover = cubre la caja por completo aunque la imagen escape del contenedor
+    contain =  la imagen se ajusta al contenido, pero se repite si la foto no cubre el total de la caja.
+*/
+
+.bg-size{
+    background-image: url(imagenes/abeja1.png);
+    background-size: contain;
+    
+}
+
+.bg-repeat{
+    background-image: url(imagenes/abeja1.png);
+    background-size: contain;
+    background-repeat: no-repeat; /*no-repeat para que no se repitan, repeat: para que se repita(valor por defecto), repeat-x se repita en el eje x, repeat-y se repita en el eje y*/
+
+}
+
+/*
+background position
+    left top
+    left center
+    left bottom
+    right top
+    right center
+    right bottom
+    center top
+    centeer center
+    center bottom
+    x% y%
+    xpos ypos
+    initial
+    inherit
+*/
+
+.bg-position{
+    background-image: url(imagenes/abeja1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;/* posicion respecto al contenedor*/
+}
+
+.bg-origin{
+    background-image: url(imagenes/abeja1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding: 20px;
+    /* background origin si redimensiona la imagen */
+    background-origin: content-box; /*border box establece que el fondo se extiende hasta el borde del contenido, padding-box se extiende hasta el padding, content-box solo se dibuja el fondo en el contenido*/
+}
+
+.bg-clip{
+    border: 5px solid red;
+    background-color: blue;
+    padding: 20px;
+    /*background clip recorta la imagen si es necesario*/
+    background-clip: content-box; /*border box establece que el fondo se extiende hasta el borde del contenido, padding-box se extiende hasta el padding, content-box solo se dibuja el fondo en el contenido*/
+}
+
+/*attachment permite establecer si el fondo se coloca respecto a
+la caja o al viewport
+    scroll/fixed
+*/
+
+.bg-attachment{
+    width: 100%;
+    background-image: url(imagenes/abeja1.png);
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+.bg-multiple{
+    background-image: url(imagenes/abeja2.jpg), url(imagenes/abeja1.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    
+}

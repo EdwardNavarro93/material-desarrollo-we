@@ -1,0 +1,16 @@
+.title{
+
+    text-align: center;
+    font-size: 3em;
+}
+
+p{
+    font-size: 2em;
+}
+
+.parrafo1{
+    /*el elemento se oculta pero el espacio se conserva*/
+    /*visibility: hidden;*/
+    /*elimina el elemento y el espacio reservado tambien*/
+    display: none;  
+}

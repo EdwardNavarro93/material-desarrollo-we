@@ -1,0 +1,39 @@
+/* 
+
+Outline
+
+outline-width
+    px|em|rem|%|....
+
+outline-style
+    none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+
+    *Estas medidas dependen del navegador*
+    thick (ancho)
+    medium (medio)
+    thin (fino)
+        
+outline-color
+    css native|rgb|rgba|hsl|hsla|hexadecimal|transparent
+
+outline-top-(width | style | color)
+outline-right-(width | style | color)
+outline-bottom-(width | style | color)
+outline-left-(width | style | color)
+
+*/
+
+.box1{
+    width: 90%;
+    margin: 2em auto; /* centra a la izquierda y a la derecha*/
+}
+
+.box1__img{
+
+    /*border:  5px solid coral;*/
+    outline: 5px solid blue;
+    outline-offset: 20px; /*crea un borde visual sin necesidad de empujar el resto de contenido*/
+    /*tambien acepta valores negativos*/
+    /*outline-offset: -25px; */
+
+}

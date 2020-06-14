@@ -1,0 +1,13 @@
+body{
+    padding-top: 6em;
+}
+
+.menu{
+    background: darkcyan;
+    padding: .5em;
+    text-align: center;
+    font-size: 2em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}

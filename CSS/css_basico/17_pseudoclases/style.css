@@ -1,0 +1,91 @@
+/*
+Dynamic
+    :link (links) - Link no visitado
+    :visited (links) - Link visitado
+    :active (links) - El momento del click
+    :hover - Al poner el mouse sobre el elemento
+    :focus - Cuando el elemento tiene el foco
+
+Target
+    :target - Elemento es objetivo de un marcador o ancla
+
+Language
+    :lang() - Elemento que contiene el atributo lang que especifiquemos
+*/
+
+
+/* pseudoclase link y visited casi no se utilizan pero se deja aqui como se usan por si acaso*/
+.link:link{
+    color: red;
+}
+
+.link:visited{
+    color:green;
+}
+
+.link:active{
+    color: cyan;
+    background: red;
+}
+
+.button{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 3px;
+    background: orangered;
+    color: palegoldenrod;
+    padding: .5em;
+    border-radius: 10px;
+}
+
+.button:active{ /* se activa cuando se hace click sobre el elemento*/
+    transform:scale(0.5);
+}
+
+.button:hover{ /*se activa cuando se pasa el raton sobre el elemento*/
+    color: red;
+    background: palegoldenrod;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.input:focus{
+    background: coral;
+}
+
+
+.span{
+    display: block;
+}
+
+.span:lang(en){ /*existe por si quieres seleccionar todos los lang(en)*/
+    color: darkcyan;
+     
+}
+
+.menu{
+    background: lightblue;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    /*position: sticky;
+    top: 0;
+    left: 0;*/
+    
+}
+.text{
+
+    margin-top: 100px;
+    margin-bottom:100px;
+}
+
+.text:target{ /*se le aplica el estilo respecto al elemento objetivo*/
+    padding-top: 70px;
+}
+
+
+
+
+

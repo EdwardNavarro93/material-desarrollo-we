@@ -1,0 +1,44 @@
+
+/*
+p{
+    color: green;
+}
+
+a{
+    color: inherit; /* que herede el valor del atributo (color) que posee el padre (verde) */
+/*} */
+
+
+/* comienza la especificidad*/
+
+/* Especificidad                                 peso
+   etiqueta ----------------------------------->  1
+   clases y pseudoclases----------------------->  10
+   ID------------------------------------------>  100
+   Estilos en linea (style)-------------------->  1000  esto no es recomendable
+   Important----------------------------------->  infinito  este peor
+*/
+
+p{
+    color: red;
+}
+
+a{
+    color: inherit; /*cascada*/
+}
+
+#parrafo{  /* el id e gana a las clases no importa la cascada*/
+    color: cyan;
+}
+
+.parrafo{ /* clase le gana a la eiqueta*/
+    color: green;
+}
+ /*
+p{
+    /*esto se usa en casos extremos*/ 
+/*
+    color:yellow !important;  
+} */
+
+

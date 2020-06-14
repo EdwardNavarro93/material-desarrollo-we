@@ -1,0 +1,43 @@
+/* Border
+
+border-width
+    px|em|rem|%|....
+
+border-style
+    none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+
+    *Estas medidas dependen del navegador*
+    thick (ancho)
+    medium (medio)
+    thin (fino)
+        
+border-color
+    css native|rgb|rgba|hsl|hsla|hexadecimal|transparent
+
+border-top-(width | style | color)
+border-right-(width | style | color)
+border-bottom-(width | style | color)
+border-left-(width | style | color)
+*/
+
+
+.box1, .box2{
+
+    width: 200px;
+    height: 200px;
+    margin: 2em;
+}
+
+.box1{
+
+    background: chartreuse;
+    border: 5px solid red;
+    border-top: none;
+}
+
+.box2{
+    background: lightseagreen;
+    border-left-width: 5px;
+    border-left-style: dotted;
+    border-left-color: rgb(206, 118, 4);
+}

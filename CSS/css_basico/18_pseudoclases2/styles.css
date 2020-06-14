@@ -1,0 +1,58 @@
+/*
+UI States
+    :enabled
+    :disabled
+    :checked
+    :in-range
+    :out-of-range
+    :required
+    :optional
+    :valid
+    :invalid
+    :read-only
+    :read-write
+*/
+
+.input, .label{
+    display: block;
+}
+
+.input:enabled{ /*se aplican a los elementos que esten enabled*/
+    background: red;
+}
+
+.input:disabled{ /* se aplican a los elementos que esten desactivados*/
+    background: yellow;
+    border: none;
+}
+
+.input:checked + label{ /* se aplica al label por debajo del elemento chekeado*/
+    font-size: 1.5em;
+}
+
+.input:in-range{ /* se aplica si esta adentro del rango e igualmentee con "out-of-range* se aplicaria el estilo a los que esten fuera de rango*/
+    background: green;
+}
+
+/*sse le aplica a los elementos que estan configurados como opcionales
+.input:optional{
+    background: purple;
+}*/
+
+/* se le aplica a los elementos que estan configurados como obligatorios(required)
+.input:required{
+    background: lightcoral;
+}
+*/
+
+/*
+se aplica si el valor es valido
+.input:valid{ 
+    background: royalblue;
+}
+
+se aplica si el valor es invalido
+.input:invalid{ 
+    background: springgreen;
+}
+*/

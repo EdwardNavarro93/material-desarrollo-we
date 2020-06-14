@@ -1,0 +1,17 @@
+img{
+    max-width: 100%;
+}
+
+
+.square{
+
+    width: 100px;
+    height: 100px;
+    background: red;
+    padding: 20px;  /* espacio que hay entre la caja y el contenido */
+    border: 5px solid rgb(0, 10, 10);    /*bore que se le agrega a la caja */
+}
+
+*, *::before, *:after{
+    box-sizing: border-box;  /* para que los elementos tengan el tamaño deseado */
+}

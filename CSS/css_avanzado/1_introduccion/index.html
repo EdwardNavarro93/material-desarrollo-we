@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Introduccion</h1>
+
+    <h2>que es una animacion/ transicion</h2>
+
+    <p>las animaciones proporcionan una forma de intrpolar valores de propiedades CSS cuando cambian como resultado de cambios subyacentes en las propiedades. Cuando el estado inicial y el estado final de una propiedad sucede en un periodo de tiempo, se denomina interpolacion</p>
+
+    <h2>fases del renderizado</h2>
+
+    <p>cuando se cambia una propiedad el navegador tiene que recalcular como dibujar los elementos. Existe 3 fases a la hora de ver los elementos en pantalla.</p>
+
+    <ol>
+        <li>Layout: Como se colocan los elementos en pantalla (consume muchos recursos)</li>
+        <li>Paint: Dibujar o pintar los pixeles de los elemento (consumo medio)</li>
+        <li>Composite: Componer y dibujar los elementos en pantalla (consumo bajo)</li>
+    </ol>
+
+    <h2>Propiedades Animables</h2>
+
+    <ul>
+        <li>No todas las propiedades CSS son animables</li>
+        <li>Para animar una propiedad el navegador tiene que poder calcular estados intermedios</li>
+        <li>Todas las propiedades numericas CON ESTADOS INTERMEDIOS son animables: margin, paddin, font-size, color, etc</li>
+    </ul>
+
+    <h3>Ejemplo introductorio</h3>
+
+    <div class="box">Instantaneo</div>
+    <div class="box animate">Animado</div>
+
+
+        
+</body>
+</html>

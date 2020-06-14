@@ -1,0 +1,52 @@
+/*
+Se utilizan para dar estilo a partes específicas de un elemento.
+La sintaxis es selector::pseudo-element{ estilos }
+
+Existen 5 pseudoelementos:
+    ::first-letter (Elementos de bloque)
+    ::first-line (Elementos de bloque)
+    ::selection (Retirado de la especificación)
+    ::before ::after
+        La propiedad content es obligatoria
+        Son elementos de línea por defecto
+        Son hijos del elemento al que pertenecen
+
+*/
+.title::first-letter{
+
+    color: red;
+    font-size: 2em;
+}
+
+.text::first-line{
+    font-size: 1.5em;
+    color: blue;
+}
+
+.inline{ 
+
+    display: block;    /* debe asegurarse que el elemento sea un elemento de bloque*/
+    /*display: inline-block;*/
+}
+
+.inline::first-letter{
+    color: orangered;
+    font-size: 1.3em;
+}
+
+/* le da estilo a la parte que seleccione el usuario con el raton*/
+.text::selection{
+    background: lawngreen;
+    color: chocolate;
+}
+
+.dolar::before{
+    content: '$';
+    background: chartreuse;
+}
+
+.dolar::after{
+    content: '.00';
+}
+
+

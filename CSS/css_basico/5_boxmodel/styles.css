@@ -1,0 +1,32 @@
+h1{
+
+    background: crimson;
+    height: 150px;
+    width: 100px;
+}
+
+h2{
+    background: darkorange;
+    width: 50px;
+}
+
+a{ /* elementos en linea no tienen ni ancho ni alto*/
+    background: green;
+
+
+}
+
+.box-1{
+    width: 100px; /*ancho del bloque*/
+    height: 100px; /*alto del bloque*/
+    background: mediumvioletred; /*color del bloque*/
+    padding: 30px; /*separacion del contenido con su contenedor*/
+    border: 20px solid mediumspringgreen ; /*aumenta el tamaño del bloque*/ 
+    margin: 20px; /*no cuenta como tamaño del bloque y se utiliza para localizar elementos*/
+}
+
+.box-2{
+    width: 100px;
+    height: 100px;
+    background: blue;
+}

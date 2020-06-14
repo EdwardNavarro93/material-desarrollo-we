@@ -1,0 +1,121 @@
+/*
+
+Especificación w3c:
+https://www.w3.org/Style/Examples/007/fonts.en.html
+https://www.w3.org/TR/CSS22/fonts.html#font-family-prop
+
+A los tipos de letra que existen se les denomina fuentes o tipografía
+
+Familias tipográficas
+    Tienen nombre propio
+      Arial, Times New Roman, open sans, ubuntu
+
+Familias genéricas o seguras
+    Su nombre se basa en sus características
+      serif: Tienen un adorno en los remates
+      sans-serif: Tienen un corte seco en los remates (mas usado en parrafos)
+      cursive: emulan tipografia manuscrita
+      fantasy: Letra decorativa
+      monospace: Todos los caracteres tienen el mismo ancho
+
+FONT
+    font-family: Establece la familia tipográfica
+        Se utiliza el nombre propio de la fuente o una familia genérica, se recomienda utilizar SIEMPRE fuentes de reserva ('Times New Roman', Times, serif)
+    font-size: Establece el tamaño de fuente
+        Se define en unidades:
+            px: pixeles (medida absoluta)
+            em: medida relativa al contexto (al padre)
+            rem: medida relativa al html
+            %: medida relativa al tamaño actual
+
+            vh: medida relativa al height del viewport
+            vw: media relativa al width del viewport
+            vmin: medida relativa al valor mínimo de viewport
+            vmax: medida relativa al valor máximo de viewport
+
+    font-weight: Establece el grosor de la fuente
+        bold | normal | 100-900
+
+    font-style: Establece el estilo de la tipografía
+        normal | italic | oblique
+
+*/
+
+@font-face{
+    src: url('fonts/AboutLove.ttf');
+    font-family: myfuente;
+}
+
+
+body{
+    font-size: 30px;
+}
+
+.title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em; /*el doble de lo que tiene el padre*/
+    /*font-size: 200%; /*el doble de lo de su padre*/
+    font-style: italic; /*el estilo de la fuente (cursiva)*/
+}
+.span{
+    font-size: 2rem; /*el doble de lo que tiene el documento completo*/
+}
+
+.paragraph{
+    font-size: 10vmin; /*porcentaje (usado en responsive design)*/
+    font-weight: bold; /*negrita*/
+}
+
+
+
+/*
+TEXT
+    Text-transform: Transforma el texto a mayúsculas, minúsculas, etc.
+        lowercase (minusculas) | uppercase (mayusculas) | capitalize (primera letra de cada palabra en mayusculas)
+
+    text-align: Alinea el texto del elemento a la izquierda, derecha, etc. SOLO ELEMENTOS DE BLOQUE (excepto en botones, que aunque sean de elementos en línea funciona)
+        center | left | right | justify (en web casi no se usa)
+
+    text-decoration: Establece la decoración del texto
+        overline | line-through | underline | none
+
+    text-indent: mueve la primera linea de un de texto. SOLO ELEMENTOS DE BLOQUE
+*/
+
+/*
+OTHER
+    line-height: establece la altura de la linea
+    letter-spacing: establece la separacion de las letras con una medida en cualquier unidad
+*/
+
+.subtitle{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.paragraph2{
+    text-indent: 30px; /*da una identacion*/
+    line-height: 50px;
+    letter-spacing: 10px;
+}
+
+.link{
+    text-decoration: line-through; /*texto tachado*/
+    /*text-decoration: none;/*qitar la decoracion*/
+}
+
+.titulo3{
+    
+    font-family: 'Major Mono Display', sans-serif;
+}
+
+.paragraph3{
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo4{
+    font-family: myfuente, sans-serif;
+}
+
+

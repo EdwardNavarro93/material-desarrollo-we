@@ -1,0 +1,41 @@
+/*
+-Nos permite definir cómo se comporta una caja.
+-De forma natural existen elementos en línea y elementos en bloque
+-Los valores de esta propiedad son:
+    inline – Establece que la caja se comporta como si fuera un elemento en línea.
+        No admite dimensiones (width y height)
+        Admiten margin y padding pero no afecta al flujo vertical,sólo al horizontal
+    block - Establece que la caja se comporta como si fuera un elemento en bloque.
+        Admite dimensiones (width y height)
+        Admiten margin y padding y afecta al flujo vertical, sólo al horizontal.
+
+    inline-block - Se comporta como un elemento en línea pero acepta width y heigth
+    
+    none – Oculta el elemento pero se sigue renderizando, ademas el espacio que ocupa no se respeta
+
+    table – Imita el comportamiento de una tabla
+
+    list-item - Imita el comportamiento de una lista
+
+    CSS3
+    flex – maquetar componentes
+    grid – maquetar layout
+*/
+
+
+
+.inline1{
+    background: lime;
+    display: inline-block; /*permite tener elementos en linea al cual se le puede aplicar propiedades de los elementos en bloque*/
+    margin-bottom: 1em;
+    height: 150px;
+}
+
+.inline2{
+    background: chocolate;
+    display: none; /*ocultar y mostrar un elemento dinamicamente*/
+}
+
+.block{
+    background: yellow;
+}

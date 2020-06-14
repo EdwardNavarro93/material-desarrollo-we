@@ -1,0 +1,20 @@
+.box{
+    width: 300px;
+    height: 300px;
+    margin: 1em;
+    font-size: 3rem;
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: lime;
+}
+
+.animate{
+    transition: background-color 3s;
+}
