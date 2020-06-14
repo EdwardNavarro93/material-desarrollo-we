@@ -1,0 +1,111 @@
+/*variables y como usarlas*/
+$font-text:Arial, Helvetica, sans-serif;
+$font-color: black;
+$font-titles: #00538c;
+$font-size-text:1.2em;
+$font-size-titles: 2em;
+$border-box: 2px solid #00538c;
+$background-body: white;
+
+
+body{
+    font-family: $font-text;
+    color: $font-color;
+    background-color: $background-body;
+    font-size: $font-size-text;
+}
+
+h1{
+    color: $font-titles; 
+    font-size: $font-size-titles;
+}
+
+
+/*anidacion en sass y como usarla*/
+.caja{
+    border: $border-box;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+
+    .info{
+        color: blue;
+        .author{
+            display: block;
+            margin: 10px;
+            border: $border-box;
+            background-color: springgreen;
+        }
+    }
+}
+
+// esto es un comentario tambien 
+
+//mixins o lo que es lo mismo funciones en sass
+
+@mixin create-border($border-color, $size, $shadow-color){
+    border: 5px solid $border-color;
+    border-radius: $size;
+    box-shadow: 0px 0px 5px $shadow-color;
+}
+
+.listado{
+    @include create-border(green, 5px, black);
+    margin: 15px;
+}
+
+//herencia en sass
+%boxes{
+    border: 2px solid lime;
+    background-color: #ccc;
+    color: orangered;;
+    padding: 20px;
+    margin: 20px;
+}
+
+.alert, .alert-danger{
+    @extend %boxes;
+}
+
+.alert-warning{
+    @extend %boxes;
+    color: magenta;
+}
+
+//operadores 
+
+h2{
+    font-size: 20px + 5px -1px;
+}
+
+.subtitulo{
+    width: 960px/1920px * 100%; //50%
+    margin: 0 auto;
+    background-color: lime;
+}
+
+//condicionales
+
+h3{
+    @if $background-body==white{
+        color: red;
+    }
+    @else if $background-body==grey{
+        color: lime;
+    }
+    @else{
+        color: magenta;
+    }
+}
+
+//bucles
+
+$i:0;
+@for $i from 1 through 8{
+
+    .listado2 ul li:nth-child(#{$i}){
+        font-size: $i * 5px;
+    }
+}
+
