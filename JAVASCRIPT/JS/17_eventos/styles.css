@@ -1,0 +1,33 @@
+a, button{
+    display: block;
+    margin: 10px;
+}
+
+.box{
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.gallery__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}

@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  background-color: #2f3238;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.video {
+  width: 50vw;
+  height: 50vh;
+
+}
