@@ -1,0 +1,12 @@
+.borde{
+    border: 2px dashed black;
+}
+
+.sin-borde{
+    border:none;
+}
+
+.margen-superior{
+    margin-top: 20px;
+    display: block;
+}

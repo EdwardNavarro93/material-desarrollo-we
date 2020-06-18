@@ -1,0 +1,12 @@
+#datos{
+    border: 2px solid green;
+    width: 220px;
+    height: 220px;
+    margin: 20px;
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: 10px 0;
+}
